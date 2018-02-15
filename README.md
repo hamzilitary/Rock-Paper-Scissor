@@ -1,4 +1,5 @@
-# Anagram
+# Rock, Paper, Scissors
+
 
 #### By Frank Ngo
 
@@ -8,20 +9,19 @@ A program to test if a set of words are anagrams of another word.
 
 ## Specifications
 
-  * Check that the user can enter in a word into the first field for the word to test.
-  * Check that the user can enter in words into the test field for the words to test from.
-    * Check if the user entered in case sensitive characters
-      * Expected Input: 'dog'
-      * Expected Output: True
-      * Expected Input: 'Dog'
-      * Expected Output: True
-    * Check if the user entered in a alphanumeric character
-      * Expected Input: '3dog'
-      * Expected Output: True
-    * Check if the user entered in a special character
-      * Expected Input: '$dog'
-      * Expected Output: False
-  * Check that the form proceeds and user can enter in information.
+Recreate the game Rock, Paper, Scissors. For anyone who has never played it, here are the rules:
+
+* It is played by 2 people. Each person chooses "Rock", "Paper", or "Scissors" by forming a shape with their hand.
+* They choose at the same time, so that each person doesn't know what the other person has picked.
+* If one person chooses "Rock" and the other person picks "Scissors" then "Rock" wins. It's a game of combinations:
+
+Rock v. Scissors = Rock wins
+Rock v. Paper = Paper wins
+Paper v. Scissors = Scissors wins
+
+* If both people choose the same thing, then it is a draw and nobody wins.
+
+Write a method that can handle the different combinations of plays and make sure to write specs for all possible combination of plays. Your method should take 2 inputs - one for each player's choice. It should return "Player 1" if the first input wins, "Player 2" if the second input wins, and "Draw" if nobody wins.
 
 ### Installing
 

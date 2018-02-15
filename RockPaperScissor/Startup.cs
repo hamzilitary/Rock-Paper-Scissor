@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Http;
 
-namespace Project
+namespace RockPaperScissors
 {
     public class Startup
     {
@@ -33,7 +33,7 @@ namespace Project
             app.UseStaticFiles();
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Something went horribly wrong :0");
+                await context.Response.WriteAsync("Something went horribly wrong");
             });
         }
     }

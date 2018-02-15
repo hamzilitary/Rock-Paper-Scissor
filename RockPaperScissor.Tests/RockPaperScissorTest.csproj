@@ -5,11 +5,11 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
-    <PackageReference Include="MSTest.TestAdapter" Version="1.1.11" />
-    <PackageReference Include="MSTest.TestFramework" Version="1.1.11" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Project\Project.csproj" />
+    <ProjectReference Include="..\RockPaperScissor\RockPaperScissors.csproj" />
   </ItemGroup>
 </Project>

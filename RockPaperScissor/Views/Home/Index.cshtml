@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <style>
+    body {
+      background: url(http://www.freegreatpicture.com/files/147/2063-background-color.jpg)
+    }
+
+    .container {
+      font-size: 40px;
+      color: #fff;
+    }
+
+    .GameResult {
+      color: #fff;
+      font-size: 40px;
+
+    }
+
+    .jumbotron {
+       background: rgb(200, 54, 54);
+       background: rgba(200, 54, 54, 0.5);
+       text-align: center;
+       background-color: rgba(0, 0, 0, 0);
+    }
+    </style>
+    <title>Title</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+  </head>
+  <body>
+    <div class="jumbotron">
+
+        <h1>Rock Paper Scissor</h1>
+
+      </div>
+      <center>
+        <h3>How to play:</h3>
+        <p>blah blah blah</p>
+      </center>
+      <div class="container">
+      <form action="/gameResult" method="post">
+
+            <div>
+              <label>Player One:</label><br>
+              <input type="radio" name="PlayerOne" value="Rock">Rock
+              <input type="radio" name="PlayerOne" value="Paper">Paper
+              <input type="radio" name="PlayerOne" value="Scissors">Scissors
+            </div><br>
+
+            <div>
+              <label>Player Two:</label><br>
+              <input type="radio" name="PlayerTwo" value="Rock">Rock
+              <input type="radio" name="PlayerTwo" value="Paper">Paper
+              <input type="radio" name="PlayerTwo" value="Scissors">Scissors
+            </div>
+
+            <button type="submit" name="button">Submit</button>
+          </form>
+        </div>
+        <div class="GameResult">
+          @Model.GetResult()
+        </div>
+
+
+  </body>
+</html>
